@@ -2,9 +2,11 @@ package stack;
 
 public class Query {
 	
-	public void query(){
+	public static void query(){
 		Stack stack=new Stack();
 		stack.push("abc");
+		System.out.println(stack.size);
 		stack.pop();
+		System.out.println(stack.size);
 	}
 }

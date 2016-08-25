@@ -2,7 +2,7 @@ package linkedlist;
 
 public class Query {
 
-	public void query(){
+	public static void query(){
 		//creating a linked list 
 				LinkedList linkedList=new LinkedList();
 				
