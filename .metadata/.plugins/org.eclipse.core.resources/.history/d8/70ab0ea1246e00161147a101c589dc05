@@ -21,8 +21,8 @@ public class Queue<T> {
 		}
 		else{
 			Node temp=new Node(item);
-			rear.next=temp;
-			rear=temp;
+			front.next=temp;
+			front=temp;
 		}
 		size++;	
 	}
@@ -31,8 +31,8 @@ public class Queue<T> {
 		if(front==null)
 			return null;
 		else{
-			Node return_item=new Node(front.item);
-			front=front.next;
+			Node return_item=new Node(rear.item);
+			rear=rear.next;
 			size--;
 			return return_item;
 		
