@@ -16,26 +16,21 @@ public class Stack<T> {
 		size=0;
 	}
 	public void push(T item){
-		if(top==null)
-			top=new Node(item);
-		else{
-			Node temp=new Node(item);
-			temp.next=top;
-			top=temp;
-		}		
+		Node temp=new Node(item);
+		temp.next=top;
+		top=temp;	
 		size++;
 	}
 	
-	T pop(){
-		T return_item;
+	public Node pop(){
 		if(top!=null){
-			return_item=(T) top.item;
+			Node return_item=new Node(top.item);
 			top=top.next;
 			size--;
+			return return_item;
 		}
 		else
-			return_item=null;
+			return null;
 		
-		return return_item;
 	}
 }

@@ -2,7 +2,7 @@ package queue;
 
 class Node<T>{
 	T item;
-	Node next,previous;
+	Node next;
 	Node(T item){
 		this.item=item;
 		
@@ -21,21 +21,18 @@ public class Queue<T> {
 		}
 		else{
 			Node temp=new Node(item);
-			temp.next=front;
-			front.previous=temp;
+			front.next=temp;
 			front=temp;
 		}
 		size++;	
 	}
 	
-	public T dequeue(){
-		T return_item;
+	public Node dequeue(){
 		if(front==null)
 			return null;
 		else{
-			return_item=(T) rear.item;
-			rear=rear.previous;
-			rear.next=null;
+			Node return_item=new Node(rear.item);
+			rear=rear.next;
 			size--;
 			return return_item;
 		
