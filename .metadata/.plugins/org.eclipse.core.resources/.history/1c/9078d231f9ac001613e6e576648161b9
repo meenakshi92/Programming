@@ -1,0 +1,27 @@
+package stack;
+
+class StackNode{
+	int val;
+	StackNode next;
+	StackNode(int val){
+		this.val=val;
+	}
+}
+public class StackNew {
+	StackNode top;
+	int size;
+	
+	StackNew(){
+		top=null;
+		size=0;
+	}
+	public int pop(){
+		
+	}
+	
+	public void push(int value){
+		if(top==null){
+			top=new StackNode(value);
+		}
+	}
+}

@@ -1,0 +1,10 @@
+package linkedlist;
+
+class NodeNew<T>{
+	T value;
+	NodeNew next;
+}
+
+public class LinkedListNew {
+	
+}

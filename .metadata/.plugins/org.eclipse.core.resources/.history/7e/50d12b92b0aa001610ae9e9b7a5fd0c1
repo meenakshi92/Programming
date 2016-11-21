@@ -1,0 +1,23 @@
+package linkedlist;
+
+class NodeNew<T>{
+	T value;
+	NodeNew<T> next;
+	
+	NodeNew(T value){
+		this.value=value;
+	}
+}
+
+public class LinkedListNew<T> {
+	NodeNew<T> head;
+	
+	LinkedListNew(){
+		head=null;
+	}
+	
+	public void insert(T value){
+		if(head==null)
+			head=NodeNew()
+	}
+}

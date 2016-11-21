@@ -1,0 +1,12 @@
+package stack;
+
+class StackNode{
+	int val;
+	StackNode next;
+	StackNode(int val){
+		this.val=val;
+	}
+}
+public class StackNew {
+
+}

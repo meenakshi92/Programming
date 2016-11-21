@@ -1,0 +1,14 @@
+package linkedlist;
+
+class NodeNew<T>{
+	T value;
+	NodeNew<T> next;
+}
+
+public class LinkedListNew {
+	NodeNew<T> head;
+	
+	public void insert(){
+		
+	}
+}

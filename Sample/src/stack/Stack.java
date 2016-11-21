@@ -1,6 +1,6 @@
 package stack;
 
-class Node<T>{
+class Node<T extends Comparable>{
 	T item;
 	Node next;
 	Node(T item){
@@ -16,7 +16,7 @@ public class Stack<T> {
 		size=0;
 	}
 	public void push(T item){
-		Node temp=new Node(item);
+		Node temp=new Node((Comparable) item);
 		temp.next=top;
 		top=temp;	
 		size++;

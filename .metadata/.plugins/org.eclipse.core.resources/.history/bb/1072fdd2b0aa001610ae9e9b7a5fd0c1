@@ -1,0 +1,25 @@
+package linkedlist;
+
+class NodeNew<T>{
+	T value;
+	NodeNew<T> next;
+	
+	NodeNew(T value){
+		this.value=value;
+	}
+}
+
+//asssuming an infinite list
+public class LinkedListNew<T> {
+	NodeNew<T> head;
+	
+	LinkedListNew(){
+		head=null;
+	}
+	
+	public void insert(T value){
+		if(head==null)
+			head=new NodeNew<T>(value);
+		
+	}
+}

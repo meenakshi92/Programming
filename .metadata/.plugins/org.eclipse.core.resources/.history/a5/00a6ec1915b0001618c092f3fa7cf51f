@@ -1,0 +1,43 @@
+package trees;
+
+class Node{
+	int val;
+	Node left;
+	Node right;
+	Node parent;
+	Node(int val){
+		this.val=val;
+		this.left=null;
+		this.right=null;
+		this.parent=null;
+	}
+}
+public class bst {
+	Node root;
+	bst(){
+		root=null;
+	}
+	
+	public void insert(int val){
+		if(root==null)
+			root=new Node(val);
+		else{
+			Node temp=root;
+			Node prev=null;
+			while(temp!=null){
+				prev=temp;
+				if(temp.val<=val)
+					temp=temp.right;
+				else
+					temp=temp.left;
+				
+			}
+			temp=new Node(val);
+			temp.parent=prev;
+		}
+	}
+	
+	public void delete(int val){
+		
+	}
+}
